@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/ico" href="assets/images/ba_favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="">
+    <title>BNP Paribas | Ma banque en ligne</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <a href="index.html" name="deconnexion" class="btn disconect">Déconnexion</a>
+            <div class="logo">
+                <img src="assets/images/ba_logo.png" width="150px" alt="">
+            </div>
+        </header>
+        <div class="corps">
+            <div class="vertical_nav">
+                <div class="navg">
+                    <div class="title">information Bancaire</div>
+                    <div class="a_group">
+                        <a href="compte-courant.html" class="nav-link">Compte Courant</a>
+                        <a href="compte-epagne.html" class="nav-link">Compte Épargne</a>
+                    </div>
+                </div>
+
+                <div class="navg">
+                    <div class="title">Gestions des Virements</div>
+                    <div class="a_group">
+                        <a href="#" class="nav-link disabled">Suivre vos virements</a>
+                        <a href="#" class="nav-link disabled">Effectuer un virement</a>
+                        <a href="#" class="nav-link disabled"> Liste des bénéficiaires</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="compteinfos">
+                <div class="alert alert-danger text-center">
+                    <p>Désolé, votre compte est bloqué vous ne pouvez pas effectuer une action .Veuillez contacter votre
+                        gestionnaire bancaire pour plus d'information</p>
+                </div>
+                <div class="mini_header">
+
+
+                    <h1>Compte Courant</h1>
+                    <div class="date">
+                        <p id="date"></p>
+                    </div>
+                </div>
+                <marquee behavior="" direction="left"><b>Bienvenu(e) Mlle. Mellon Vanessa, sur votre compte en ligne</b>
+                </marquee>
+                <h3>Votre compte en ligne</h3>
+                <p><b>Détails - Relevé d'Identité Bancaire (RIB)</b> </p>
+
+                <table class="table">
+                    <tr>
+                        <td>Titulaire du compte :</td>
+                        <td>Mellon Vanessa</td>
+                    </tr>
+                    <tr>
+                        <td>IBAN :</td>
+                        <td>FR76 3000 4028 8200 0102 2878 452</td>
+                    </tr>
+                    <tr>
+                        <td>Code banque :</td>
+                        <td>30004</td>
+                    </tr>
+                    <tr>
+                        <td>Code Guichet :</td>
+                        <td>4478</td>
+                    </tr>
+                    <tr>
+                        <td>Numéro compte :</td>
+                        <td>00010228784</td>
+                    </tr>
+                    <tr>
+                        <td>Clé RIB :</td>
+                        <td>52</td>
+                    </tr>
+                    <tr>
+                        <td>BIC :</td>
+                        <td>BNPAFRPPXXX</td>
+                    </tr>
+                    <tr>
+                        <td>Domiciliation des fonds :</td>
+                        <td>BNP PARIBAS France - Banque</td>
+                    </tr>
+                </table>
+                <p><b>Le relevé de votre situation financière</b></p>
+                <div class="flexe">
+                    <p>COMPTE COURANT</p>
+                </div>
+                <div class="flex">
+                    <p>IBAN</p>
+                    <P><b>FR76 3000 4028 8200 0102 2878 452</b></P>
+                </div>
+
+                <table class="table2" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Libellé</th>
+                            <th>Montant</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b style="color: red;">Bloqué</b></td>
+                            <td><b>103.000€</b></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script>
+        var today = new Date();
+        var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
+        document.getElementById("date").innerHTML = date;
+    </script>
+    
+</body>
+
+</html>
